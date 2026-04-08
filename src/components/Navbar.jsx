@@ -55,7 +55,7 @@ export default function Navbar({ setPage }) {
   const [hovered, setHovered] = useState(null)
   const [ctaHovered, setCtaHovered] = useState(false)
 
-  const links = ['Features', 'Templates', 'Pricing', 'About']
+  const links = ['Features', 'Templates', 'Pricing', 'Contact']
 
   return (
     <nav style={styles.nav}>

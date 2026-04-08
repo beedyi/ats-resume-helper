@@ -7,6 +7,7 @@ import HowItWorks from './components/HowItWorks'
 import Testimonials from './components/Testimonials'
 import Templates from './components/Templates'
 import Pricing from './components/Pricing'
+import Contact from './components/Contact'
 import { CTA, Footer } from './components/CtaFooter'
 import AuthPage from './components/AuthPage'
 
@@ -25,6 +26,7 @@ export default function App() {
           <Testimonials />
           <Templates />
           <Pricing />
+          <Contact />
           <CTA />
           <Footer />
         </>
