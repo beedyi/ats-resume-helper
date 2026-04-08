@@ -11,6 +11,7 @@ const STATS = [
 export default function Stats() {
   return (
     <div
+      className="stats-container"
       style={{
         display: 'flex',
         margin: '4rem 2.5rem',
@@ -23,6 +24,7 @@ export default function Stats() {
       {STATS.map((s, i) => (
         <div
           key={s.label}
+          className="stats-item"
           style={{
             flex: 1,
             padding: '2rem',

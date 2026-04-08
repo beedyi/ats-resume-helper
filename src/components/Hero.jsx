@@ -4,7 +4,7 @@ const styles = {
   section: {
     position: 'relative',
     overflow: 'hidden',
-    padding: '7rem 2.5rem 5rem',
+    paddingTop: '7rem', // Keep extra top padding for Hero
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -71,6 +71,7 @@ const styles = {
     alignItems: 'center',
     flexWrap: 'wrap',
     justifyContent: 'center',
+    width: '100%',
   },
 }
 
@@ -79,7 +80,7 @@ export default function Hero() {
   const [ghostHovered, setGhostHovered] = useState(false)
 
   return (
-    <section style={styles.section}>
+    <section style={styles.section} className="responsive-section">
       <div style={styles.glow} />
 
       <div className="fade-up" style={styles.badge}>
@@ -97,7 +98,7 @@ export default function Hero() {
         and generates tailored cover letters — in seconds.
       </p>
 
-      <div className="fade-up-delay-3" style={styles.actions}>
+      <div className="fade-up-delay-3 hero-btns" style={styles.actions}>
         <button
           style={{
             fontFamily: 'var(--mono)',
@@ -130,6 +131,8 @@ export default function Hero() {
             background: 'transparent',
             cursor: 'pointer',
             transition: 'color 0.15s',
+            display: 'inline-block',
+            textAlign: 'center',
           }}
           onMouseEnter={() => setGhostHovered(true)}
           onMouseLeave={() => setGhostHovered(false)}

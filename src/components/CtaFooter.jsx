@@ -5,12 +5,11 @@ export function CTA() {
 
   return (
     <div
+      className="responsive-cta"
       style={{
-        margin: '2rem 2.5rem 4rem',
         border: '1px solid var(--border)',
         borderRadius: 'var(--radius-xl)',
         background: 'var(--bg2)',
-        padding: '4rem',
         textAlign: 'center',
         position: 'relative',
         overflow: 'hidden',
@@ -77,12 +76,9 @@ export function CTA() {
 export function Footer() {
   return (
     <footer
+      className="responsive-footer"
       style={{
         borderTop: '1px solid var(--border)',
-        padding: '2rem 2.5rem',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
       }}
     >
       <div

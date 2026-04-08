@@ -22,8 +22,8 @@ export default function HowItWorks() {
   return (
     <section
       id="features"
+      className="responsive-section"
       style={{
-        padding: '5rem 2.5rem',
         background: 'var(--bg2)',
         borderTop: '1px solid var(--border)',
         borderBottom: '1px solid var(--border)',
@@ -55,13 +55,7 @@ export default function HowItWorks() {
         Three steps. Zero guesswork.
       </div>
 
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)',
-          gap: '2rem',
-        }}
-      >
+      <div className="responsive-grid-3">
         {STEPS.map((s) => (
           <div key={s.num}>
             <div

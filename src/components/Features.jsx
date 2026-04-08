@@ -92,7 +92,7 @@ export default function Features() {
   return (
     <section
       id="features"
-      style={{ padding: '5rem 2.5rem' }}
+      className="responsive-section"
     >
       <div
         style={{
@@ -132,9 +132,8 @@ export default function Features() {
       </div>
 
       <div
+        className="responsive-grid-3"
         style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)',
           gap: '1px',
           background: 'var(--border)',
           border: '1px solid var(--border)',

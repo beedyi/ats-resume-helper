@@ -52,8 +52,8 @@ export default function Pricing() {
   return (
     <section
       id="pricing"
+      className="responsive-section"
       style={{
-        padding: '5rem 2.5rem',
         background: 'var(--bg2)',
         borderTop: '1px solid var(--border)',
         borderBottom: '1px solid var(--border)',
@@ -95,13 +95,7 @@ export default function Pricing() {
         Start free, upgrade when you're ready.
       </div>
 
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-          gap: '1.5rem',
-        }}
-      >
+      <div className="responsive-grid-2">
         {/* Free Plan */}
         <div
           style={{

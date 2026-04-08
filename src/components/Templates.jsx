@@ -6,8 +6,8 @@ export default function Templates() {
   return (
     <section
       id="templates"
+      className="responsive-section"
       style={{
-        padding: '5rem 2.5rem',
         background: 'var(--bg)',
         display: 'flex',
         flexDirection: 'column',
@@ -77,10 +77,8 @@ export default function Templates() {
 
       {/* Cards Grid */}
       <div
+        className="responsive-grid-2"
         style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-          gap: '2rem',
           maxWidth: '900px',
           width: '100%',
         }}

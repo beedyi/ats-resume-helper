@@ -49,6 +49,7 @@ export default function AuthPage({ setPage }) {
       </button>
 
       <div
+        className="auth-card"
         style={{
           background: 'var(--bg2)',
           borderRadius: 'var(--radius-xl)',

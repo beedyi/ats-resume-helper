@@ -35,7 +35,7 @@ function highlightText(text, highlight) {
 
 export default function Testimonials() {
   return (
-    <section style={{ padding: '5rem 2.5rem' }}>
+    <section className="responsive-section">
       <div
         style={{
           fontFamily: 'var(--mono)',
@@ -62,13 +62,7 @@ export default function Testimonials() {
         People are getting hired.
       </div>
 
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)',
-          gap: '1.5rem',
-        }}
-      >
+      <div className="responsive-grid-3">
         {TESTIMONIALS.map((t) => (
           <div
             key={t.author}
